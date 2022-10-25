@@ -10,7 +10,7 @@ class Personne
         public function __construct(string $nom, string $societe = self::PAS_DE_SOCIETE){
             $this->setNom($nom);
             $this->setSociete($societe);
-            self::$effectif ++;
+            self::$effectif++;
         }
         /**
          *
