@@ -3,6 +3,7 @@
 namespace App\Reporting;
 
 use App\Reporting\Format\HtmlFormatter;
+use App\Reporting\Format\HtmlSpecialFormatter;
 use App\Reporting\Format\JsonFormatter;
 
 class ReportExtractor
@@ -21,8 +22,10 @@ class ReportExtractor
         $results = [];
         $htmlformatter = new HtmlFormatter;
         $jsonformatter = new JsonFormatter;
+        $htmlspecialformatter = new HtmlSpecialFormatter;
         $results[] = $htmlformatter->formatToHTML($report);
         $results[] = $jsonformatter->formatToJSON($report);
+        $results[] = $htmlspecialformatter->formatToHTML($report);
 
         return $results;
     }
