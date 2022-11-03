@@ -11,6 +11,15 @@ class Familiale extends Vehicule{
         parent::__construct($marque, $modele, $distance, $id);
         parent::rouler($distance);
     }
+    /**
+     * Fonction rouler
+     */
+    public function rouler($dist)
+    {
+        for ($i = 1; $i <= 120000; $i+=30000) {
+            echo $i;
+        }
+    }
 
     /**
      * Get the value of nbPassMax

@@ -8,7 +8,18 @@ class Citadine extends Vehicule{
         parent::__construct($marque, $distance, $modele, $id);
         $this->setAutonomie($autonomie);
         parent::rouler($distance);
-    }   
+    }  
+    
+    
+    /**
+     * Fonction rouler
+     */
+    public function rouler($dist)
+    {
+        for ($i = 1; $i <= 120000; $i+=15000) {
+            echo $i;
+        }
+    }
     
     /**
      * Get the value of autonomie

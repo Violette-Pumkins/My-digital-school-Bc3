@@ -10,6 +10,17 @@ class Utilitaire extends Vehicule{
         parent::rouler($distance);
     }
 
+
+      /**
+     * Fonction rouler
+     */
+    public function rouler($dist)
+    {
+        for ($i = 1; $i <= 120000; $i+=50000) {
+            return $i;
+        }
+    }
+
     /**
      * Get the value of charge
      */ 
